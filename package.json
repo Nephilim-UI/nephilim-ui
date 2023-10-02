@@ -1,5 +1,5 @@
 {
-  "name": "@goswamianshuman/nephilim-ui",
+  "name": "@nephilim-ui/core-ui",
   "private": false,
   "version": "0.0.1",
   "type": "module",
@@ -41,6 +41,6 @@
     "**/*.css"
   ],
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/@goswamianshuman"
+    "registry": "https://npm.pkg.github.com/@nephilim-ui"
   }
 }

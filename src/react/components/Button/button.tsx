@@ -1,11 +1,7 @@
-import React from 'react'; 
+import React from "react";
 
-type Props = {}
+type Props = {};
 
-function button({}: Props) {
-  return (
-    <button>button</button>
-  )
+export default function button({}: Props) {
+  return <div>click me</div>;
 }
-
-export default button

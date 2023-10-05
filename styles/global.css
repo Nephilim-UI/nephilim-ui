@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*,
+body,
+:root {
+  font-family: 'Asap', sans-serif;
+}
+
+@layer components {
+  /* button styles */
+  button {
+    @apply font-normal text-base py-2 px-4 border-none outline-none rounded-md shadow-md shadow-black/20 scale-[1] active:scale-[0.95] transition-all ease-linear duration-200;
+  }
+}

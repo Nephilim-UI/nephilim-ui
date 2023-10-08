@@ -2,9 +2,9 @@
   "name": "@nephilim-ui/core-ui",
   "author": "Anshuman",
   "license": "ISC",
-  "description": "#### ui library for all frameworks",
+  "description": "ui library for all frameworks",
   "private": false,
-  "version": "0.0.4",
+  "version": "0.0.5",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
   "files": [

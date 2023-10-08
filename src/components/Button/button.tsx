@@ -1,18 +1,8 @@
 import React from 'react'
 import '/styles/global.css'
-import { ButtonProps } from '../../../types/ButtonProps'
+import { ButtonProps } from '../../../types/button.types'
+import { color_varient } from './button.styles'
 
 export default function button({ children, className, colorVarient }: ButtonProps) {
-  return (
-    <button
-      className={`${colorVarient === 'danger' && 'bg-red-500 text-white'} ${
-        colorVarient === 'primary' && 'bg-blue-500 text-white'
-      }
-      ${colorVarient === 'secondary' && 'bg-green-500 text-white'}
-      ${colorVarient === 'warning' && 'bg-orange-500 text-white'}
-      ${className}`}
-    >
-      {children}
-    </button>
-  )
+  return <button className={`${color_varient(colorVarient)} ${className}`}>{children}</button>
 }

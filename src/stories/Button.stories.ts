@@ -8,6 +8,12 @@ export default {
 
 type Story = StoryObj<typeof Button>
 
+export const Default: Story = {
+  args: {
+    children: 'hello world',
+    className: '',
+  },
+}
 export const Primary: Story = {
   args: {
     children: 'hello world',

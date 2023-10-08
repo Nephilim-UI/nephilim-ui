@@ -1,5 +1,5 @@
 import React from 'react'
-import '/styles/global.css'
+import '../../styles/global.css'
 import { ButtonProps } from '../../../types/button.types'
 import { color_varient } from './button.styles'
 

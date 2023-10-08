@@ -1,5 +1,5 @@
 export type ButtonProps = {
   children: React.ReactNode
-  className?: string
-  colorVarient?: 'primary' | 'secondary' | 'danger' | 'warning'
+  className: undefined | string
+  colorVarient: undefined | 'primary' | 'secondary' | 'danger' | 'warning'
 }

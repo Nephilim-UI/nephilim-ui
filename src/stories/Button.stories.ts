@@ -14,6 +14,7 @@ export const Default: Story = {
     className: '',
   },
 }
+
 export const Primary: Story = {
   args: {
     children: 'hello world',

@@ -4,7 +4,7 @@
   "license": "ISC",
   "description": "ui library for all frameworks",
   "private": false,
-  "version": "0.0.58",
+  "version": "0.0.59",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
   "files": [

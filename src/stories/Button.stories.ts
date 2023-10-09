@@ -12,14 +12,13 @@ export const Default: Story = {
   args: {
     children: 'hello world',
     className: '',
-    onclick
   },
 }
 
 export const Primary: Story = {
   args: {
     children: 'hello world',
-    colorVarient: 'primary',
+    bgVariant: 'primary',
     className: '',
   },
 }
@@ -27,7 +26,7 @@ export const Primary: Story = {
 export const Secondary: Story = {
   args: {
     children: 'hello world',
-    colorVarient: 'secondary',
+    bgVariant: 'secondary',
     className: '',
   },
 }
@@ -35,7 +34,7 @@ export const Secondary: Story = {
 export const Warning: Story = {
   args: {
     children: 'hello world',
-    colorVarient: 'warning',
+    bgVariant: 'warning',
     className: '',
   },
 }
@@ -43,7 +42,7 @@ export const Warning: Story = {
 export const Danger: Story = {
   args: {
     children: 'hello world',
-    colorVarient: 'danger',
+    bgVariant: 'danger',
     className: '',
   },
 }

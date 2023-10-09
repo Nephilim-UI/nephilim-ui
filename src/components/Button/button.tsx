@@ -15,6 +15,7 @@ const Button: React.ForwardRefRenderFunction<HTMLButtonElement | HTMLAnchorEleme
 ) => {
   const {
     variant = 'default',
+    bgVariant = 'default',
     styles,
     disabled = false, //change this
     className,
@@ -47,7 +48,7 @@ const Button: React.ForwardRefRenderFunction<HTMLButtonElement | HTMLAnchorEleme
         {...linkButtonRestProps}
         onClick={handleClick}
         ref={buttonRef as React.Ref<HTMLAnchorElement>}
-        className={`${className}`}
+        className={`${color_varient(bgVariant)} ${className}`}
       >
         {children}
       </a>
@@ -58,7 +59,7 @@ const Button: React.ForwardRefRenderFunction<HTMLButtonElement | HTMLAnchorEleme
     <button
       {...others}
       type={htmlType}
-      className={`${className}`}
+      className={`${color_varient(bgVariant)} ${className}`}
       onClick={handleClick}
       disabled={disabled}
       ref={buttonRef as React.Ref<HTMLButtonElement>}

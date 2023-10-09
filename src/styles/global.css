@@ -13,6 +13,6 @@ body,
 @layer components {
   /* button styles */
   button {
-    @apply font-normal text-base py-2 px-4 border-none outline-none rounded-md shadow-md shadow-black/20 scale-[1] active:scale-[0.95] transition-all ease-linear duration-200;
+    @apply font-normal text-base py-2 px-4 border-none outline-none rounded-md shadow-md shadow-black/20 scale-[1] active:scale-[0.98] transition-all ease-linear duration-200;
   }
 }

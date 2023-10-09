@@ -1,8 +1,9 @@
-import { ButtonHTMLType, VariantType } from './button.helper'
+import { BgColorType, ButtonHTMLType, VariantType } from './button.helper'
 
 export type LegacyVariantType = VariantType | 'danger'
 
 export interface BaseButtonProps {
+  bgVariant?: BgColorType
   variant?: VariantType
   disabled?: boolean //add a void function too
   className?: string

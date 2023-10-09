@@ -12,6 +12,7 @@ export const Default: Story = {
   args: {
     children: 'hello world',
     className: '',
+    onclick
   },
 }
 

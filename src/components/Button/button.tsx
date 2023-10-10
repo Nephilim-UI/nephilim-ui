@@ -19,6 +19,7 @@ const variants = cva(
     'ease-linear',
     'duration-200',
     'active:scale-[0.98]',
+    'cursor-pointer',
   ],
   {
     variants: {

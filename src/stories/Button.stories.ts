@@ -12,6 +12,9 @@ export const Default: Story = {
   args: {
     children: 'hello world',
     className: '',
+    onClick: () => alert('hello world'),
+    styles: { bgColor: 'black' },
+    'aria-checked': 'true',
   },
 }
 

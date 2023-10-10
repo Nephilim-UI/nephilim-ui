@@ -7,7 +7,6 @@ export interface BaseButtonProps {
   variant?: VariantType
   disabled?: boolean //add a void function too
   className?: string
-  children: React.ReactNode
   [key: `data-${string}`]: string
   styles?: React.CSSProperties
 }
@@ -26,4 +25,5 @@ export interface ButtonProps extends BaseButtonProps, Merge_html_attributes {
   href?: string
   htmlType?: ButtonHTMLType
   children: React.ReactNode
+  onClick?: () => void
 }

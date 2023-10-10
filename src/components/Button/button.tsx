@@ -2,7 +2,7 @@ import React, { createRef, forwardRef } from 'react'
 import '../../styles/global.css'
 import omit from 'rc-util/lib/omit'
 import { composeRef } from 'rc-util/lib/ref'
-import { color_varient } from './button.styles'
+import { color_varient } from './button.helper'
 import { ButtonProps } from './button.types'
 
 // export const button = ({ children, className, colorVarient }: ButtonProps) => {
@@ -22,6 +22,7 @@ const Button: React.ForwardRefRenderFunction<HTMLButtonElement | HTMLAnchorEleme
     children,
     htmlType = 'button',
     style: customStyle = {},
+    onClick,
     ...others
   } = props
 
@@ -29,16 +30,16 @@ const Button: React.ForwardRefRenderFunction<HTMLButtonElement | HTMLAnchorEleme
 
   const buttonRef = composeRef(ref, innerRef)
 
-  const handleClick = (e: React.MouseEvent<HTMLButtonElement | HTMLAnchorElement, MouseEvent>) => {
-    const { onClick } = props
+  // const handleClick = (e: React.MouseEvent<HTMLButtonElement | HTMLAnchorElement, MouseEvent>) => {
+  //   const { onClick } = props
 
-    if (disabled) {
-      e.preventDefault()
-      return
-    }
+  //   if (disabled) {
+  //     e.preventDefault()
+  //     return
+  //   }
 
-    ;(onClick as React.MouseEventHandler<HTMLButtonElement | HTMLAnchorElement>)?.(e)
-  }
+  //   ;(onClick as React.MouseEventHandler<HTMLButtonElement | HTMLAnchorElement>)?.(e)
+  // }
 
   const linkButtonRestProps = omit(others as ButtonProps & { navigate: any }, ['navigate'])
 
@@ -46,7 +47,7 @@ const Button: React.ForwardRefRenderFunction<HTMLButtonElement | HTMLAnchorEleme
     return (
       <a
         {...linkButtonRestProps}
-        onClick={handleClick}
+        onClick={onClick}
         ref={buttonRef as React.Ref<HTMLAnchorElement>}
         className={`${color_varient(bgVariant)} ${className}`}
       >
@@ -60,7 +61,7 @@ const Button: React.ForwardRefRenderFunction<HTMLButtonElement | HTMLAnchorEleme
       {...others}
       type={htmlType}
       className={`${color_varient(bgVariant)} ${className}`}
-      onClick={handleClick}
+      onClick={onClick}
       disabled={disabled}
       ref={buttonRef as React.Ref<HTMLButtonElement>}
     >

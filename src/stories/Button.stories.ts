@@ -1,5 +1,5 @@
 import { Meta, StoryObj } from '@storybook/react'
-import { default as Button } from '../components/Button/button'
+import { Button } from '../components/Button/button'
 
 export default {
   title: 'React/Button',
@@ -12,40 +12,42 @@ export const Default: Story = {
   args: {
     children: 'hello world',
     className: '',
-    onClick: () => alert('hello world'),
-    styles: { bgColor: 'black' },
-    'aria-checked': 'true',
+    colorVariant: 'default',
+    size: 'small',
+    variant: 'outline',
   },
 }
 
 export const Primary: Story = {
   args: {
     children: 'hello world',
-    bgVariant: 'primary',
     className: '',
+    colorVariant: 'primary',
+    size: 'medium',
   },
 }
 
 export const Secondary: Story = {
   args: {
     children: 'hello world',
-    bgVariant: 'secondary',
     className: '',
+    colorVariant: 'secondary',
+    size: 'large',
   },
 }
 
 export const Warning: Story = {
   args: {
     children: 'hello world',
-    bgVariant: 'warning',
     className: '',
+    colorVariant: 'warning',
   },
 }
 
 export const Danger: Story = {
   args: {
     children: 'hello world',
-    bgVariant: 'danger',
     className: '',
+    colorVariant: 'danger',
   },
 }

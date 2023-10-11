@@ -50,34 +50,21 @@ const variants = cva(
   },
 )
 
-const Loader = () => (
-  <>
-    <div className='w-4 h-4 rounded-full border-2 border-b-transparent animate-spin border-[inherit]' />
-  </>
-)
-
 type ButtonProps = React.ButtonHTMLAttributes<HTMLElement> &
   VariantProps<typeof variants> & {
-    loading?: boolean
+    // loading?: boolean
+    // custom types
   }
 
 const Button = forwardRef<HTMLButtonElement, ButtonProps>((props, ref) => {
-  const { className, variant, size, colorVariant, children, loading, ...others } = props
+  const { className, variant, size, colorVariant, children, ...others } = props
   return (
     <button
       ref={ref}
       className={twMerge(variants({ variant, size, colorVariant, className }))}
       {...others}
     >
-      {loading && <Loader />}
-      <span
-        className={clsx('transition', {
-          'opacity-50': loading,
-          'opacity-100': !loading,
-        })}
-      >
-        {children}
-      </span>
+      {children}
     </button>
   )
 })

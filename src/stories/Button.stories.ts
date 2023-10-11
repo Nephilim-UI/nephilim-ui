@@ -1,5 +1,5 @@
 import { Meta, StoryObj } from '@storybook/react'
-import { Button } from '../components/Button/button'
+import { Button } from '../components'
 
 export default {
   title: 'React/Button',
@@ -14,7 +14,7 @@ export const Default: Story = {
     className: '',
     colorVariant: 'default',
     size: 'small',
-    variant: 'outline',
+    variant: 'filled',
   },
 }
 

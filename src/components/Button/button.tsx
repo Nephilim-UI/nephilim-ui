@@ -20,12 +20,13 @@ const variants = cva(
     'duration-200',
     'active:scale-[0.98]',
     'cursor-pointer',
+    'border-[2px]',
   ],
   {
     variants: {
       variant: {
-        filled: ['bg-[inherit]'],
-        outline: ['bg-transparent'],
+        filled: ['border-none', '!text-[#fff]'],
+        outline: ['!bg-transparent', '!border-solid', '!shadow-none'],
         normal: [],
       },
       size: {
@@ -34,11 +35,11 @@ const variants = cva(
         large: ['py-4', 'px-6', 'leading-7', 'text-lg'],
       },
       colorVariant: {
-        default: ['bg-purple-600', 'text-[#fff]'],
-        primary: ['bg-blue-600', 'text-[#fff]'],
-        secondary: ['bg-green-600', 'text-[#fff]'],
-        warning: ['bg-orange-600', 'text-[#fff]'],
-        danger: ['bg-red-600', 'text-[#fff]'],
+        default: ['bg-purple-600', 'border-purple-600', 'text-purple-600'],
+        primary: ['bg-blue-600', 'border-blue-600', 'text-blue-600'],
+        secondary: ['bg-green-600', 'border-green-600', 'text-green-600'],
+        warning: ['bg-orange-600', 'border-orange-600', 'text-orange-600'],
+        danger: ['bg-red-600', 'border-red-600', 'text-red-600'],
       },
     },
     defaultVariants: {

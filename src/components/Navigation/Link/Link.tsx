@@ -2,7 +2,7 @@ import { VariantProps } from 'class-variance-authority'
 import React, { forwardRef } from 'react'
 import { twMerge } from 'tailwind-merge'
 import { LinkVariants } from './Link.helper'
-import '../../styles/global.css'
+import '../../../styles/global.css'
 
 type LinkProps = React.AnchorHTMLAttributes<HTMLElement> &
   VariantProps<typeof LinkVariants> & {

@@ -1,10 +1,9 @@
 import React, { forwardRef } from 'react'
 import { VariantProps } from 'class-variance-authority'
 // import clsx from 'clsx'
-import '../../styles/global.css'
+import '../../../styles/global.css'
 import { twMerge } from 'tailwind-merge'
 import { ButtonVariants } from './Button.helper'
-
 
 type ButtonProps = React.ButtonHTMLAttributes<HTMLElement> &
   VariantProps<typeof ButtonVariants> & {

@@ -2,7 +2,7 @@ import { Meta, StoryObj } from '@storybook/react'
 import { Link } from '../components'
 
 export default {
-  title: 'React/Link',
+  title: 'Navigation/Link',
   component: Link,
 } as Meta<typeof Link>
 

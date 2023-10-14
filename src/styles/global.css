@@ -11,7 +11,7 @@ body,
 }
 
 @layer components {
-  .container{
-    @apply bg-blue-400 
+  .container {
+    @apply bg-blue-400;
   }
 }

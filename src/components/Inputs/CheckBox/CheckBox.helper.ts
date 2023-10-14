@@ -56,7 +56,7 @@ export const CheckBoxVariant = cva(
     },
     defaultVariants: {
       checkBoxSize: 'small',
-      checkedColor: 'danger',
+      checkedColor: 'default',
     },
   },
 )

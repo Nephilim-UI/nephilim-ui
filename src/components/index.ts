@@ -1,2 +1,2 @@
-export * from './Button'
-export * from './Link'
+export * from './Inputs'
+export * from './Navigation'

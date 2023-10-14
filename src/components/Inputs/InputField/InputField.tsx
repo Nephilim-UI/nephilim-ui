@@ -10,7 +10,7 @@ type InputProps = React.HTMLProps<HTMLInputElement> &
     // custom types
     label?: string
     InputType?: 'text' | 'email' | 'password' | 'number'
-    InputWidth?: string | undefined
+    InputWidth?: '100%' | string | undefined
     LabelColor?: string
     LabelBackground?: string | undefined
   }
@@ -34,7 +34,7 @@ export const InputField = forwardRef<HTMLInputElement, InputProps>((props, ref) 
   }
 
   return (
-    <div className={clsx('data-wrap', InputWidth)}>
+    <div className='data-wrap' style={{ width: InputWidth }}>
       <input
         ref={ref}
         className={twMerge(InputVariant({ className }))}

@@ -12,6 +12,6 @@ export const Default: Story = {
   args: {
     children: 'hello world',
     className: '',
-    InputWidth: 'w-[50%]',
+    InputWidth: '100%',
   },
 }

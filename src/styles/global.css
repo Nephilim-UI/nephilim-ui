@@ -11,7 +11,16 @@ body,
 }
 
 @layer components {
-  .container {
-    @apply bg-blue-400;
+  .data-wrap {
+    @apply h-[50px] relative;
+  }
+
+  .data-wrap > label {
+    @apply absolute top-[50%] left-[15px] translate-y-[-50%] transition-all ease-linear duration-200 text-sm pointer-events-none font-normal bg-none capitalize;
+  }
+
+  .data-wrap > input:focus + label,
+  .data-wrap > input:valid + label {
+    @apply text-xs top-0 bg-white p-[5px];
   }
 }

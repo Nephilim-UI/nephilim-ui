@@ -11,13 +11,6 @@ type SwitchProps = React.HTMLProps<HTMLInputElement> &
 export const Switch = forwardRef<HTMLInputElement, SwitchProps>((props, ref) => {
   const { className, children, SwitchSize, CheckedSwitchVariant, ...others } = props
 
-  // const [check, setCheck] = React.useState(false)
-
-  // const switchStyle: React.CSSProperties = {
-  //   backgroundColor: CheckedSwitchBackground || 'rgb(34,197,94)',
-  //   opacity: 1,
-  // }
-
   return (
     <label className={twMerge(SwitchContainerVariant())}>
       <input

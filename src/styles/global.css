@@ -23,4 +23,8 @@ body,
   .data-wrap > input:valid + label {
     @apply text-xs top-0 bg-white p-[5px];
   }
+
+  input[type='range']::-webkit-slider-thumb {
+    @apply cursor-pointer;
+  }
 }

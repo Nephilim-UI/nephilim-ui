@@ -9,7 +9,7 @@ export default {
 
 type AccordionStory = StoryObj<typeof Accordion>
 
-export const accordion: AccordionStory = {
+export const acc: AccordionStory = {
   args: {
     children: '',
     Question: <div>hello world</div>,
@@ -18,6 +18,7 @@ export const accordion: AccordionStory = {
     questionBorder: true,
     questionTextMode: 'uppercase',
     solutionBorder: false,
-    disabled: true,
+    disabled: false,
+    width: 'full',
   },
 }

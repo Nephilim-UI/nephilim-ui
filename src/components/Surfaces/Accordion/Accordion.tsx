@@ -39,6 +39,7 @@ export const Accordion = forwardRef<HTMLDivElement, AccProp>((props, ref) => {
     SolutionColorVariant,
     SolutionTextSize,
     disabled,
+    width,
     ...others
   } = props
   const [hidden, setHidden] = React.useState(true)
@@ -66,7 +67,7 @@ export const Accordion = forwardRef<HTMLDivElement, AccProp>((props, ref) => {
       ref={ref}
       style={AccStyle}
       {...others}
-      className={twMerge(AccVariant({ typeVariant, CoverColorVariant, raised, className }))}
+      className={twMerge(AccVariant({ typeVariant, CoverColorVariant, raised, width, className }))}
     >
       <div
         onClick={() => {

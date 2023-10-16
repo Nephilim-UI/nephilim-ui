@@ -4,7 +4,6 @@ export const AccVariant = cva(
   [
     'min-w-[100px]',
     'min-h-max',
-    'w-[300px]',
     'rounded-md',
     'px-5',
     'transition-all',
@@ -22,6 +21,14 @@ export const AccVariant = cva(
         normal: ['shadow-md', 'shadow-black/20'],
         outline: ['shadow-none', 'border-[2px]'],
       },
+
+      width: {
+        default: ['w-[300px]'],
+        half: ['w-[50%]'],
+        full: ['w-full'],
+        screen: ['w-screen'],
+      },
+
       CoverColorVariant: {
         default: ['bg-purple-500/20', 'border-purple-600/50'],
         primary: ['bg-blue-500/20', 'border-blue-600/50'],
@@ -31,6 +38,7 @@ export const AccVariant = cva(
       },
     },
     defaultVariants: {
+      width: 'default',
       raised: false,
       typeVariant: 'default',
       CoverColorVariant: 'default',

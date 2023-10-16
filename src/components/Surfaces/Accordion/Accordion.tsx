@@ -17,6 +17,7 @@ type AccProp = React.HTMLProps<HTMLDivElement> &
     solutionTextMode?: 'lowercase' | 'uppercase' | 'capitalize'
     questionTextColor?: string
     solutionTextColor?: string
+    disabled?: boolean
   }
 
 export const Accordion = forwardRef<HTMLDivElement, AccProp>((props, ref) => {
@@ -37,18 +38,21 @@ export const Accordion = forwardRef<HTMLDivElement, AccProp>((props, ref) => {
     solutionTextColor,
     SolutionColorVariant,
     SolutionTextSize,
+    disabled,
     ...others
   } = props
   const [hidden, setHidden] = React.useState(true)
 
   const AccStyle: React.CSSProperties = {
     background: coverBgColor,
+    opacity: `${disabled && '70%'}`,
   }
 
   const AccQueStyle: React.CSSProperties = {
     border: `${!questionBorder && 'none'}`,
     textTransform: questionTextMode,
     color: questionTextColor,
+    cursor: `${disabled && 'not-allowed'}`,
   }
 
   const AccSolStyle: React.CSSProperties = {
@@ -66,7 +70,11 @@ export const Accordion = forwardRef<HTMLDivElement, AccProp>((props, ref) => {
     >
       <div
         onClick={() => {
-          setHidden(!hidden)
+          if (disabled) {
+            return
+          } else {
+            setHidden(!hidden)
+          }
         }}
         style={AccQueStyle}
         role='button'

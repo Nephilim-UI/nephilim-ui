@@ -18,5 +18,6 @@ export const accordion: AccordionStory = {
     questionBorder: true,
     questionTextMode: 'uppercase',
     solutionBorder: false,
+    disabled: true,
   },
 }

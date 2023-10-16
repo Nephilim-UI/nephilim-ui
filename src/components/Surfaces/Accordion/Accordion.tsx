@@ -62,7 +62,7 @@ export const Accordion = forwardRef<HTMLDivElement, AccProp>((props, ref) => {
       ref={ref}
       style={AccStyle}
       {...others}
-      className={twMerge(AccVariant({ typeVariant, CoverColorVariant, raised }))}
+      className={twMerge(AccVariant({ typeVariant, CoverColorVariant, raised, className }))}
     >
       <div
         onClick={() => {

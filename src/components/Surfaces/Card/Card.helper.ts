@@ -8,7 +8,6 @@ export const CardVariants = cva(
     'rounded-lg',
     'px-5',
     'py-4',
-
     'transition',
     'ease-linear',
     'duration-100',

@@ -29,11 +29,20 @@ export const CollapsibleVariants = cva(
         full: ['w-full'],
         screen: ['w-screen'],
       },
+
+      TextSize: {
+        extrasmall: ['text-xs'],
+        small: ['text-sm'],
+        medium: ['text-base'],
+        large: ['text-lg'],
+        extralarge: ['text-xl'],
+      },
     },
     defaultVariants: {
       width: 'default',
       raised: false,
       typeVariant: 'default',
+      TextSize: 'medium',
     },
   },
 )
@@ -43,7 +52,6 @@ export const BlockVariant = cva(
     'data-[collapsed="false"]:visible',
     'data-[collapsed="false"]:h-max',
     'data-[collapsed="false"]:py-3',
-    'data-[collapsed="false"]:border-b-[2px]',
     'invisible',
     'transition-all',
     'ease-linear',
@@ -59,24 +67,16 @@ export const BlockVariant = cva(
   ],
   {
     variants: {
-      SolutionColorVariant: {
-        default: ['text-purple-600'],
-        primary: ['text-blue-600'],
-        secondary: ['text-green-600'],
-        warning: ['text-orange-600'],
-        danger: ['text-red-600'],
-      },
-      SolutionTextSize: {
-        extrasmall: ['text-xs'],
-        small: ['text-sm'],
-        medium: ['text-base'],
-        large: ['text-lg'],
-        extralarge: ['text-xl'],
+      ListColorVariant: {
+        default: ['bg-purple-300'],
+        primary: ['bg-blue-300'],
+        secondary: ['bg-green-300'],
+        warning: ['bg-orange-300'],
+        danger: ['bg-red-300'],
       },
     },
     defaultVariants: {
-      //   SolutionColorVariant: 'default',
-      SolutionTextSize: 'small',
+      ListColorVariant: 'default',
     },
   },
 )

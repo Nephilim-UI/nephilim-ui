@@ -13,5 +13,8 @@ export const collapse: CollapsibleStory = {
   args: {
     children: '',
     className: '',
+    title: 'anshuman',
+    list: [<div>hello world</div>, 'this is anshuman'],
+    bgColor: 'pink',
   },
 }
